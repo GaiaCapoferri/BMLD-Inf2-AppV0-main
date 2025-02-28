@@ -50,4 +50,4 @@ st.markdown(f"""
 # Farben für die Gewichtskategorien auswählen
 underweight_color = st.color_picker("Farbe für Untergewicht:", "#ff020f")
 normalweight_color = st.color_picker("Farbe für Normalgewicht:", "#37ff2d")
-overweight_color = st.color_picker("Farbe für Übergewicht und Adipositas:", "#ff020f")
+overweight_color = st.color_picker("Farbe für Übergewicht:", "#ff020f")
