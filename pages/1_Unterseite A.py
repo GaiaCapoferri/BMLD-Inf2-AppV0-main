@@ -19,17 +19,17 @@ overweight_color = st.color_picker("Farbe für Übergewicht:", "#ff020f")
 if st.button("BMI berechnen"):
     if height > 0 and weight > 0:
         bmi = weight / (height ** 2)
-        st.write(f"Ihr BMI beträgt: {bmi:.2f}")
+        st.markdown(f"**Ihr BMI beträgt: {bmi:.2f}**")
         
         # Bestimmung des Gewichtsstatus
         if bmi < 18.5:
-            st.write("Sie sind untergewichtig.")
+            st.markdown("**Sie sind untergewichtig.**")
         elif 18.5 <= bmi < 24.9:
-            st.write("Sie haben ein normales Gewicht.")
+            st.markdown("**Sie haben ein normales Gewicht.**")
         elif 25 <= bmi < 29.9:
-            st.write("Sie sind übergewichtig.")
+            st.markdown("**Sie sind übergewichtig.**")
         else:
-            st.write("Sie sind fettleibig.")
+            st.markdown("**Sie sind fettleibig.**")
     else:
         st.write("Bitte geben Sie eine gültige Größe und ein gültiges Gewicht ein.")
 
