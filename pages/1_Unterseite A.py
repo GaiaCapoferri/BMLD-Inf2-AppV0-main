@@ -10,11 +10,6 @@ height = st.slider("Größe in Metern:", min_value=0.0, max_value=2.5, value=1.7
 # Eingabe des Gewichts
 weight = st.slider("Gewicht in Kilogramm:", min_value=0.0, max_value=200.0, value=70.0, step=0.1)
 
-# Farben für die Gewichtskategorien auswählen
-underweight_color = st.color_picker("Farbe für Untergewicht:", "#ff020f")
-normalweight_color = st.color_picker("Farbe für Normalgewicht:", "#37ff2d")
-overweight_color = st.color_picker("Farbe für Übergewicht:", "#ff020f")
-
 # Berechnung des BMI
 if st.button("BMI berechnen"):
     if height > 0 and weight > 0:
@@ -51,3 +46,8 @@ st.markdown(f"""
     .stTable tbody tr:nth-child(4) {{background-color: {overweight_color};}}
 </style>
 """, unsafe_allow_html=True)
+
+# Farben für die Gewichtskategorien auswählen
+underweight_color = st.color_picker("Farbe für Untergewicht:", "#ff020f")
+normalweight_color = st.color_picker("Farbe für Normalgewicht:", "#37ff2d")
+overweight_color = st.color_picker("Farbe für Übergewicht und Adipositas:", "#ff020f")
