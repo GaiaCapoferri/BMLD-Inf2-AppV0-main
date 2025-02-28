@@ -4,10 +4,16 @@ st.title("BMI-Rechner")
 
 st.write("Dieser Rechner berechnet den BMI einer Person und bestimmt anhand einer Tabelle, ob die Person normalgewichtig ist oder nicht.")
 
-height = st.number_input("Geben Sie Ihre Größe in Metern ein:", min_value=0.0, format="%.2f", step=0.01)
+# Eingabe der Größe und des Gewichts in einer Tabelle
+col1, col2 = st.columns(2)
 
-weight = st.number_input("Geben Sie Ihr Gewicht in Kilogramm ein:", min_value=0.0, format="%.1f", step=0.1)
+with col1:
+    height = st.number_input("Größe in Metern:", min_value=0.0, format="%.2f", step=0.01)
 
+with col2:
+    weight = st.number_input("Gewicht in Kilogramm:", min_value=0.0, format="%.1f", step=0.1)
+
+# Berechnung des BMI
 if height > 0 and weight > 0:
     bmi = weight / (height ** 2)
     st.write(f"Ihr BMI beträgt: {bmi:.2f}")
