@@ -8,7 +8,7 @@ st.title("Meine erste Streamlit App")
 # Streamlit über den Text unten direkt in die App - cool!
 """
 Diese App wurde von folgenden Personen entwickelt:
-- Gaia Capoferri 2 (capofgai@students.zhaw.ch)
+- Gaia Capoferri (capofgai@students.zhaw.ch)
 
 Diese App ist das leere Gerüst für die App-Entwicklung im Modul Informatik 2 (BMLD/ZHAW)
 

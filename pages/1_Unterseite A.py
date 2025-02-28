@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Unterseite A")
+st.title("BMI-Rechner")
 
-st.write("Diese Seite ist eine Unterseite der Startseite.")
+st.write("Dieser Rechner berechnet den BMi einer Person und bestimmt anhand einer Tabelle, ob die Person normalgewichtig ist oder nicht.")
 
