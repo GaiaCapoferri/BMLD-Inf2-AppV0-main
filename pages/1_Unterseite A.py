@@ -8,10 +8,10 @@ st.write("Dieser Rechner berechnet den BMI einer Person und bestimmt anhand eine
 col1, col2 = st.columns(2)
 
 with col1:
-    height = st.number_input("Größe in Metern:", min_value=0.0, format="%.2f", step=0.01)
+    height = st.slider("Größe in Metern:", min_value=0.0, max_value=2.5, value=1.75, step=0.01)
 
 with col2:
-    weight = st.number_input("Gewicht in Kilogramm:", min_value=0.0, format="%.1f", step=0.1)
+    weight = st.slider("Gewicht in Kilogramm:", min_value=0.0, max_value=200.0, value=70.0, step=0.1)
 
 # Berechnung des BMI
 if height > 0 and weight > 0:
