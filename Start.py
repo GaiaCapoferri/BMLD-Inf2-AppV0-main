@@ -15,7 +15,7 @@ Diese App ist das leere Gerüst für die App-Entwicklung im Modul Informatik 2 (
 
 # Navigation zu anderen Seiten
 if st.button("Gehe zu Unterseite A"):
-    st.switch_page("1_Unterseite A")
+    st.switch_page("pages/1_Unterseite A")
 
 if st.button("Gehe zu Unterseite B"):
-    st.switch_page("2_Unterseite B")
+    st.switch_page("pages/2_Unterseite B")
