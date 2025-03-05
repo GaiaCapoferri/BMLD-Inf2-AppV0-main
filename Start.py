@@ -11,6 +11,11 @@ Diese App wurde von folgenden Personen entwickelt:
 - Gaia Capoferri (capofgai@students.zhaw.ch)
 
 Diese App ist das leere Gerüst für die App-Entwicklung im Modul Informatik 2 (BMLD/ZHAW)
-
-Autor: Samuel Wehrli (wehs@zhaw.ch)
 """
+
+# Navigation zu anderen Seiten
+if st.button("Gehe zu Unterseite A"):
+    st.switch_page("1_Unterseite A")
+
+if st.button("Gehe zu Unterseite B"):
+    st.switch_page("2_Unterseite B")
