@@ -48,3 +48,7 @@ with col2:
     </table>
     """
     st.markdown(table_html, unsafe_allow_html=True)
+
+
+if st.button("Gehe zu Startseite"):
+    st.switch_page("Start.py")

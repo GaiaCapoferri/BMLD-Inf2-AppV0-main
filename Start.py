@@ -7,7 +7,7 @@ st.title("Meine erste Streamlit App")
 
 # Streamlit über den Text unten direkt in die App - cool!
 """
-Diese App wurde von folgenden Personen entwickelt:
+Diese App wurde von der folgenden Person entwickelt:
 - Gaia Capoferri (capofgai@students.zhaw.ch)
 
 Diese App ist das leere Gerüst für die App-Entwicklung im Modul Informatik 2 (BMLD/ZHAW)
@@ -15,10 +15,7 @@ Diese App ist das leere Gerüst für die App-Entwicklung im Modul Informatik 2 (
 
 # Navigation zu anderen Seiten
 if st.button("Gehe zum BMI-Rechner"):
-    st.switch_page("pages/BMI_Rechner.py")
+    st.switch_page("pages/BMI-Rechner.py")
 
-if st.button("Gehe zu Unterseite B"):
-    st.switch_page("pages/2_Unterseite B.py")
-
-if st.button("Gehe zu Unterseite C"):
-    st.switch_page("pages/3_Unterseite C.py")
+if st.button("Gehe zu Unterseite Übungen"):
+    st.switch_page("pages/Übungen.py")

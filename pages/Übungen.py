@@ -20,3 +20,6 @@ if st.button("Klick mich!"):
 # Anzeige der Anzahl der Klicks
 st.write(f"Der Knopf wurde {st.session_state.count} mal gedrückt.")
 
+# Knopf zum Wechseln zur Startseite
+if st.button("Gehe zu Startseite"):
+    st.switch_page("Start.py")
