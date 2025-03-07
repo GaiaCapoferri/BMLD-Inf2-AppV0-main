@@ -1,9 +1,9 @@
 import streamlit as st
 
-st.title("Unterseite B")
+st.title("Übungen")
 
 st.write("Diese Seite ist eine Unterseite der Startseite.")
-st.write("übung Vorlesung 3.")
+st.write("Übung Vorlesung 3.")
 
 # Zähler für die Anzahl der Klicks
 if 'count' not in st.session_state:
