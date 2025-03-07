@@ -19,3 +19,6 @@ if st.button("Gehe zum BMI-Rechner"):
 
 if st.button("Gehe zu Unterseite B"):
     st.switch_page("pages/2_Unterseite B.py")
+
+if st.button("Gehe zu Unterseite C"):
+    st.switch_page("pages/3_Unterseite C.py")
