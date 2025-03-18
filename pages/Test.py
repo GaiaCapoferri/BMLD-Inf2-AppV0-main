@@ -15,15 +15,20 @@ with st.form(key='bmi_form'):
 
 # Verarbeitung nach Absenden des Formulars
 if submit_button:
-    result = calculate_bmi(height, weight)
-    st.write(f'Ihr BMI ist: {result["bmi"]}')
-    st.write(f'Berechnet am: {result["timestamp"].strftime("%d.%m.%Y %H:%M:%S")}')
-    st.write(f'Kategorie: {result["category"]}')
-
- # update data in session state and save to persistent storage
-    DataManager().append_record(session_state_key='data_df', record_dict=result)  
-
-
+    if height > 0 and weight > 0:
+        bmi = weight / (height ** 2)
+        st.markdown(f"**Ihr BMI beträgt: {bmi:.2f}**")
+        
+        if bmi < 18.5:
+            st.markdown("**Sie sind untergewichtig.**")
+        elif 18.5 <= bmi < 24.9:
+            st.markdown("**Sie haben ein normales Gewicht.**")
+        elif 25 <= bmi < 29.9:
+            st.markdown("**Sie sind übergewichtig.**")
+        else:
+            st.markdown("**Sie sind fettleibig.**")
+    else:
+        st.write("Bitte geben Sie eine gültige Größe und ein gültiges Gewicht ein.")
 
 # Zwei Spalten für Farbauswahl und Tabelle
 col1, col2 = st.columns([1, 1])
