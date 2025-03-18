@@ -38,4 +38,10 @@ Diese App ist das leere Gerüst für die App-Entwicklung im Modul Informatik 2 (
 
 # Navigation zu anderen Seiten
 if st.button("Gehe zum BMI-Rechner"):
-    st.switch_page("pages/BMI-Rechner.py")
+    st.switch_page("pages/1_BMI-Rechner.py")
+
+if st.button("Gehe zum BMI-Daten"):
+    st.switch_page("pages/2_BMI-Daten.py")
+
+if st.button("Gehe zum BMI-Grafik"):
+    st.switch_page("pages/3_BMI-Grafik.py")

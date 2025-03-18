@@ -1,4 +1,6 @@
 import streamlit as st
+from functions.bmi_calculator import calculate_bmi
+from utils.data_manager import DataManager
 
 st.title("BMI-Rechner")
 
