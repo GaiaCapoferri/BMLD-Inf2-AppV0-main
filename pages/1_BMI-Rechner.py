@@ -25,5 +25,30 @@ if submit_button:
     st.write(f'Berechnet am: {result["timestamp"].strftime("%d.%m.%Y %H:%M:%S")}')
     st.write(f'Kategorie: {result["category"]}')
 
-    # update data in session state and save to persistent storage
+ # update data in session state and save to persistent storage
     DataManager().append_record(session_state_key='data_df', record_dict=result)  
+
+# Zwei Spalten für Farbauswahl und Tabelle
+col1, col2 = st.columns([1, 1])
+
+with col1:
+    underweight_color = st.color_picker("Farbe für Untergewicht:", "#ff020f")
+    normalweight_color = st.color_picker("Farbe für Normalgewicht:", "#37ff2d")
+    overweight_color = st.color_picker("Farbe für Übergewicht:", "#ff020f")
+
+with col2:
+    st.write("### BMI-Werte und Gewichtskategorien")
+    table_html = f"""
+    <table>
+        <tr><th>Kategorie</th><th>BMI-Bereich</th></tr>
+        <tr style='background-color: {underweight_color};'><td>Untergewicht</td><td>< 18.5</td></tr>
+        <tr style='background-color: {normalweight_color};'><td>Normalgewicht</td><td>18.5 - 24.9</td></tr>
+        <tr style='background-color: {overweight_color};'><td>Übergewicht</td><td>25 - 29.9</td></tr>
+        <tr style='background-color: {overweight_color};'><td>Adipositas</td><td>>= 30</td></tr>
+    </table>
+    """
+    st.markdown(table_html, unsafe_allow_html=True)
+
+
+if st.button("Gehe zu Startseite"):
+    st.switch_page("Start.py")

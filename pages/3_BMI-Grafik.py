@@ -27,5 +27,6 @@ st.scatter_chart(data=data_df.set_index('timestamp')['bmi'],
                  use_container_width=True)
 st.caption('BMI über Zeit')
 
-
-
+if st.button("Gehe zu Startseite"):
+    st.switch_page("Start.py")
+    

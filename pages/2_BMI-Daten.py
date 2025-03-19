@@ -17,3 +17,6 @@ data_df = data_df.sort_values('timestamp', ascending=False)
 
 # Display table
 st.dataframe(data_df)
+
+if st.button("Gehe zu Startseite"):
+    st.switch_page("Start.py")
