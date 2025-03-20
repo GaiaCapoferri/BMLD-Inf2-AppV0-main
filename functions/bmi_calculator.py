@@ -21,7 +21,7 @@ def calculate_bmi(height, weight, timezone='Europe/Zurich'):
     elif bmi < 25:
         category = 'Normalgewicht'
     elif bmi < 30:
-        category = 'Übergewicht'
+        category = 'Uebergewicht'
     else:
         category = 'Adipositas'
 
