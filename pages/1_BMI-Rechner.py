@@ -9,7 +9,7 @@ from utils.data_manager import DataManager
 
 st.title("BMI-Rechner")
 
-st.write("Dieser Rechner berechnet den BMI einer Person und bestimmt anhand einer Tabelle, ob die Person normalgewichtig ist oder nicht.")
+st.write("Mit diesem Rechner könnt ihr euren BMI berechnen.")
 
 # Formular für die BMI-Berechnung
 with st.form(key='bmi_form'):

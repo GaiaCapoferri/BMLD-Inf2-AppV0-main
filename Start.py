@@ -33,7 +33,10 @@ st.title("Meine erste Streamlit App")
 Diese App wurde von der folgenden Person entwickelt:
 - Gaia Capoferri (capofgai@students.zhaw.ch)
 
-Diese App ist das leere Gerüst für die App-Entwicklung im Modul Informatik 2 (BMLD/ZHAW)
+st.markdown("Der BMI ist eine Zahl, die als Verhältnis zwischen Gewicht und dem Quadrat der Körpergröße einer Person ausgedrückt wird und als Indikator für das Gesundheitsgewicht dient.")
+
+st.info("""Dieser Index wird häufig nur grob verwendet, da er das Geschlecht, den Körperbau und andere Faktoren nicht berücksichtigt. Für eine korrekte Diagnose ist es daher notwendig, einen Spezialisten zu konsultieren, der alle notwendigen Faktoren berücksichtigt.""")
+
 """
 
 # Navigation zu anderen Seiten

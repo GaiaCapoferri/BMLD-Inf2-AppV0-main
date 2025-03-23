@@ -1,9 +1,5 @@
-# BMLD-Inf2-AppV0
+BMLD24 Informatik 2
 
-Das leere Gerüst um eine App aufzubauen.
-
-## Autor
-
-Samuel Wehrli (wehs@zhaw.ch)
+Link: https://bmld24-inf2-appv0-main-ln1-2025-gc.streamlit.app/
 
 
