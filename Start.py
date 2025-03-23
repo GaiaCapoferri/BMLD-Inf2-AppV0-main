@@ -32,12 +32,11 @@ st.title("Meine erste Streamlit App")
 """
 Diese App wurde von der folgenden Person entwickelt:
 - Gaia Capoferri (capofgai@students.zhaw.ch)
+"""
 
 st.markdown("Der BMI ist eine Zahl, die als Verhältnis zwischen Gewicht und dem Quadrat der Körpergröße einer Person ausgedrückt wird und als Indikator für das Gesundheitsgewicht dient.")
 
-st.info("""Dieser Index wird häufig nur grob verwendet, da er das Geschlecht, den Körperbau und andere Faktoren nicht berücksichtigt. Für eine korrekte Diagnose ist es daher notwendig, einen Spezialisten zu konsultieren, der alle notwendigen Faktoren berücksichtigt.""")
-
-"""
+st.info("Dieser Index wird häufig nur grob verwendet, da er das Geschlecht, den Körperbau und andere Faktoren nicht berücksichtigt. Für eine korrekte Diagnose ist es daher notwendig, einen Spezialisten zu konsultieren, der alle notwendigen Faktoren berücksichtigt.")
 
 # Navigation zu anderen Seiten
 if st.button("Gehe zum BMI-Rechner"):
